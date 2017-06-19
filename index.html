@@ -1,7 +1,165 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <title>Erick Eduardo Aguilar</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"/>
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <link id="menu-style" rel="stylesheet" href="assets/css/menu.css">
+    <script src="http://code.jquery.com/jquery-1.4.min.js" type="text/javascript"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>
+       $("document").ready(function(){
+         $('#content').load("contents/aboutme/about.html");
+       });
+       $(function () {
+           $('#nav a').on('click', function (e) {
+             e.preventDefault();
+               var page = $(this).attr('href');
+               console.log(page)
+               $('#content').load(page);
+           });
+       });
+    </script>
+    </head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container">
+            <img class="profile-image img-responsive pull-left" src="assets/images/profile.jpg" alt="Erick Eduardo Aguilar Hernández" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Erick Eduardo Aguilar</h1>
+                <h2 class="desc">Big Data Scientist</h2>
+                <ul class="social list-inline">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+                    <li class="last-item"><a href="#"><i class="fa fa-hacker-news"></i></a></li>
+                </ul>
+            </div><!--//profile-->
+        </div><!--//container-->
+        <div class="container">
+    				<nav id="cbp-hrmenu" class="cbp-hrmenu">
+    					<ul>
+    						<li>
+    							<a href="#">Personal</a>
+    							<div class="cbp-hrsub">
+    								<div class="cbp-hrsub-inner">
+    									<div>
+    										<h4>Profiles</h4>
+    										<ul>
+    											<li><a href="" target="_self">About me</a></li>
+                          <li id="nav"><a>Github respositories</a></li>
+                          <li id="nav"><a>Kaggle</a></li>
+                          <li id="nav"><a>CodeFights</a></li>
+    										</ul>
+    									</div>
+    									<div>
+    										<h4>Projects</h4>
+    										<ul id="nav">
+    											<li><a href="#">Robot trader</a></li>
+    											<li><a href="#">Celular automata and cryptography</a></li>
+    										</ul>
+    									</div>
+    								</div><!-- /cbp-hrsub-inner -->
+    							</div><!-- /cbp-hrsub -->
+    						</li>
+                <li>
+    							<a href="#">Academy</a>
+    							<div class="cbp-hrsub">
+    								<div class="cbp-hrsub-inner">
+    									<div>
+    										<h4>Facultad de Cienicas</h4>
+    										<ul>
+    											<li><a href="#">Análisis Multivariado (2018-I)</a></li>
+    										</ul>
+    									</div>
+    									<div>
+    										<h4>Notebooks courses</h4>
+    										<ul id="nav">
+                          <li><a href="contents/academy/coursesnb/Pyspark/pyspark.html">Pyspark fundamentals</a></li>
+                          <li><a href="contents/academy/coursesnb/MultivariatedAnalysis/MultivariateAnalysis.html">Multivariated analysis</a></li>
+    											<li><a href="contents/academy/coursesnb/probability/Probability.html">Computing methods in probability</a></li>
+    										</ul>
+    									</div>
+    									<div>
+    										<h4>Notas de clase</h4>
+    										<ul>
+    											<li><a href="#">Probabilidad y estadística para ingeniería</a></li>
+                          <li><a href="#">Teoría de la computación</a></li>
+    										</ul>
+    									</div>
+    								</div><!-- /cbp-hrsub-inner -->
+    							</div><!-- /cbp-hrsub -->
+    						</li>
+    					</ul>
+    				</nav>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        		<script src="assets/js/cbpHorizontalMenu.js"></script>
+        		<script>
+        			$(function() {
+        				cbpHorizontalMenu.init();
+        			});
+        		</script>
+    		</div>
+    </header><!--//header-->
+
+    <div id="content"></div>
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+          <i class="fa fa-envelope-o"></i>
+          <p class="desc"><strong>Contact</strong></p>
+          <ul class="list-unstyled">
+                <li><span class="level"> Mexico, Mexico city</span></li>
+                <li><span class="level"> isc.ErickAguilar@gmail.com</span></li>
+                <li><span class="level"> mat.ErickAguilar@ciencias.unam.mx</span></li>
+          </ul>
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+          <!--small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small-->
+        </div><!--//container-->
+    </footer><!--//footer-->
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/cbpHorizontalMenu.js"></script>
+    <script type="text/javascript" src="assets/js/parallax.js"></script>
 </body>
 </html>
