@@ -4,7 +4,6 @@ jQuery(document).ready(function($) {
 
     $(function() {
         $('#nav a').on('click', function(e) {
-          alert('de nuevo')
           e.preventDefault();
             var page = $(this).attr('href');
             console.log(page)
