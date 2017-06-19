@@ -1,9 +1,5 @@
 jQuery(document).ready(function($) {
 
-    $(function() {
-      cbpHorizontalMenu.init();
-    });
-
     $('#content').load('contents/aboutme/about.html');
 
     $(function() {
