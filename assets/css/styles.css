@@ -104,7 +104,7 @@ a.btn {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   font-family: Agenda-Light, sans-serif;
-  padding: 8px 16px;
+  padding: 5px 5px 5px 5px;
   font-weight: bold;
 }
 .btn .fa,
@@ -118,7 +118,7 @@ a.btn:focus {
 a.btn-cta-primary,
 .btn-cta-primary {
   background: #54ba4e;
-  border: 1px solid #54ba4e;
+  border: 0px solid #54ba4e;
   color: #fff;
   font-weight: 300;
   text-transform: capitalize;
@@ -126,13 +126,13 @@ a.btn-cta-primary,
 a.btn-cta-primary:hover,
 .btn-cta-primary:hover {
   background: #465d87;
-  border: 1px solid #465d87;
+  border: 0px solid #465d87;
   color: #fff;
 }
 a.btn-cta-secondary,
 .btn-cta-secondary {
   background: #479FC8;
-  border: 1px solid #479FC8;
+  border: 0px solid #479FC8;
   color: #fff;
   font-weight: 600;
   text-transform: capitalize;
@@ -140,7 +140,7 @@ a.btn-cta-secondary,
 a.btn-cta-secondary:hover,
 .btn-cta-secondary:hover {
   background: #3893bd;
-  border: 1px solid #3893bd;
+  border: 0px solid #3893bd;
   color: #fff;
 }
 .text-highlight {
@@ -178,7 +178,7 @@ iframe {
   border-bottom: 4px solid #465d87;
 }
 .header .btn {
-  margin-top: 60px;
+  margin-top: 10px;
   font-weight: bold;
 }
 .header .profile-image {
@@ -551,7 +551,7 @@ iframe {
   color: #49515a;
 }
 .credits .btn {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 /* ======= Footer ======= */
 .footer {
@@ -584,7 +584,7 @@ iframe {
     text-align: center;
   }
   .header .btn {
-    margin-top: 30px;
+    margin-top: 10px;
     float: none !important;
   }
   .project-image {
