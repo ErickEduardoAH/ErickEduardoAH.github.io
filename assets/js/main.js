@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
 
+
+
     $('#content').load('contents/aboutme/about.html');
 
     $(function() {
