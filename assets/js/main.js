@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
 
 
-    $('#content').load('contents/aboutme/about.html');
+    $('#content').load('contents/aboutme/acerca.html');
 
     $(function() {
         $('#nav a').on('click', function(e) {
